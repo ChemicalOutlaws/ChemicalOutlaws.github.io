@@ -1,15 +1,49 @@
-* {
-	margin: 0px;
-}
 body {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
 	color: #fff;
-	background-color: #171717;
+	background-color: #1b1b1b;
 }
 #wrapper {
 	font-family: Monospace;
 	font-size: 14px;
-	margin: 0 0 0 0;
-    width: 100%;
+	width: 90%;
+	margin: 30px auto auto auto;
+}
+
+.fivem {
+	width: 590px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px auto auto 295px;
+}
+
+.fivem p {
+	padding-left: 20px;
+	padding-right: 50px;
+}
+
+#fivem_playnow {
+	width: 200px;
+	height: 282px;
+	display: inline-block;
+	vertical-align: top;    
+	position:relative;
+}
+
+#fivem_playnow img {
+    position:absolute;
+    left:0;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;    
+    transition: opacity 0.3s ease-in-out;
+}
+#fivem_playnow img.playnow-button-top:hover {
+   opacity:0;
 }
 
 a:link, a:visited, a:active {
