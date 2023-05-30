@@ -1,0 +1,21 @@
+* {
+	margin: 0px;
+}
+body {
+	color: #fff;
+	background-color: #171717;
+}
+.wrapper {
+	font-family: Monospace;
+	font-size: 14px;
+	margin: 0 0 0 0;
+    width: 100%;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+	color: #0080c0;
+}
+a:hover {
+	color: #b3e7ff;
+}
