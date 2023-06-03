@@ -1,3 +1,12 @@
+@font-face {
+	font-family: Chalet;
+	src: url(assets/web/ChaletLondonNineteenSixty.ttf);
+}
+@font-face {
+	font-family: SignPainter;
+	src: url(assets/web/SignPainter-HouseScript.ttf);
+}
+
 body {
 	margin: 0 auto;
 	width: 100%;
@@ -10,18 +19,113 @@ body {
 	background-size: cover;
 }
 #wrapper {
-	font-family: Monospace;
-	font-size: 14px;
-	width: 900px;
+	width: 1200px;
 	margin: auto;
+	font-size: 0px;
 }
 
+#CO {
+	font-family: "SignPainter";
+	font-size: 84px;
+	position: absolute;
+	filter: drop-shadow(3px 4px 1px #444);
+	top: 38px;
+	pointer-events: none;
+	float: left;
+/* 	transform: scale(1, 2);
+	-webkit-transform: scale(1, 2);
+	-moz-transform: scale(1, 2);
+	-o-transform: scale(1, 2);
+	transform-origin: 0% 0%;
+*/}
+
+#menu-top-buttons {
+	margin-top: 100px;
+	margin-bottom: 20px;
+	font-size: 0px;
+    box-sizing: border-box;
+	pointer-events: auto; 
+}
+
+.blackbox-top {
+	font-family: monospace;
+	background: rgba(0, 0, 0, 78%);
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 30px;
+	font-size: 18px;
+	margin: 0 4px 0 0px;
+	width: 196px;
+	height: 30px;
+	display: inline-block;
+    box-sizing: border-box;
+}
+.blackbox-top:hover {
+	background: rgba(255, 255, 255, 100%);
+	color: #000;
+}
+
+#menu-left-buttons {
+	font-size: 0px;
+	margin-bottom: 20px;
+    box-sizing: border-box;
+	width: 400px;
+	float: left;
+}
+
+.blackbox-left {
+	font-family: monospace;
+	background: rgba(0, 0, 0, 78%);
+	text-align: left;
+	/* text-transform: uppercase; */
+	line-height: 30px;
+	font-size: 18px;
+	margin: 0px 0px 4px 0px;
+	padding-left: 8px;
+	width: 396px;
+	height: 30px;
+    box-sizing: border-box;
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+}
+.blackbox-left:hover {
+	background: rgba(255, 255, 255, 100%);
+	color: #000;
+}
+
+.current {
+	background: rgba(255, 255, 255, 100%) !important;
+	color: #000;
+	font-weight: bold;
+}
+	
+
 .content {
-  display: flex;
-  justify-content: center;
-	background: rgba(0, 0, 0, 50%);
-	padding: 20px;
-	margin: 30px auto auto auto;
+	font-family: "Chalet";
+	font-size: 16px;
+	justify-content: left;
+	background-color: rgba(0, 0, 0, 78%);
+	background-image: url('assets/web/cologo-watermark1000-v3.png');
+	background-repeat: no-repeat;
+	background-position: 25% 25%;
+/*   background-color: rgba(0, 0, 0, 78%);
+  background-image: linear-gradient(
+    to bottom, rgba(0, 0, 0, 30%), rgba(0, 0, 0, 100%)
+  ), url("assets/web/cologo-watermark.png"); */
+	margin: 0 4px 0 0px;
+	width: 796px;
+    box-sizing: border-box;
+	min-height: 300px;
+	position: relative;
+	padding: 0 20px 20px 20px;
+	float: right;
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+}
+
+.content h1 {
+	font-size: 32px;
+	border-bottom: 1px solid white;
 }
 
 .fivem {
@@ -40,12 +144,12 @@ body {
 	height: 282px;
 	display: inline-block;
 	vertical-align: top;
-	position:relative;
+	position: relative;
 }
 
 #fivem_playnow img {
-    position:absolute;
-    left:0;
+    position: absolute;
+    left: 0;
     opacity: 1;
     -webkit-transition: opacity 0.3s ease-in-out;
     -moz-transition: opacity 0.3s ease-in-out;
@@ -54,7 +158,18 @@ body {
     transition: opacity 0.3s ease-in-out;
 }
 #fivem_playnow img.playnow-button-top:hover {
-   opacity:0;
+   opacity: 0;
+}
+
+#footer {
+	font-family: monospace;
+	font-size: 12px;
+	color: #222;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	pointer-events: none;
+	text-align: center;
 }
 
 a:link, a:visited, a:active {
