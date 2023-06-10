@@ -32,6 +32,8 @@ body {
 	top: 38px;
 	pointer-events: none;
 	float: left;
+	margin-left: 15px;
+	width: 500px;
 /* 	transform: scale(1, 2);
 	-webkit-transform: scale(1, 2);
 	-moz-transform: scale(1, 2);
@@ -39,12 +41,34 @@ body {
 	transform-origin: 0% 0%;
 */}
 
+#CO_logo {
+	width: 56px;
+	height: 70px;
+	float: right;
+	margin-top: 40px;
+	margin-bottom: -40px;
+}
+
+#CO_logo_text {
+	font-family: "Chalet";
+	font-size: 22px;
+	color: #fff;
+	float: right;
+	margin-top: 35px;
+	margin-right: 10px;
+	filter: drop-shadow(2px 3px 1px #333);
+	/* text-transform: uppercase; */
+	line-height: 22px;
+	text-align: right;
+}
+
 #menu-top-buttons {
-	margin-top: 100px;
+	margin-top: 10px;
 	margin-bottom: 20px;
 	font-size: 0px;
     box-sizing: border-box;
-	pointer-events: auto; 
+	pointer-events: auto;
+	float: left;
 }
 
 .blackbox-top {
@@ -128,6 +152,25 @@ body {
 	border-bottom: 1px solid white;
 }
 
+#socials {
+	margin: 40px 0 0 0;
+	width: 100%;
+    box-sizing: border-box;
+	min-height: 50px;
+	position: relative;
+	padding: 5px 5px 5px 5px;
+	float: left;
+	text-align: center;
+	font-size: 22px;
+	color: white;
+}
+#socials i,#socials img {
+}
+
+#socials i:hover,#socials img:hover {
+	filter: opacity(0.5) drop-shadow(0 0 0 blue);
+}
+
 .fivem {
 	width: 570px;
 	display: inline-block;
@@ -152,8 +195,6 @@ body {
     left: 0;
     opacity: 1;
     -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
     -ms-transition: opacity 0.3s ease-in-out;    
     transition: opacity 0.3s ease-in-out;
 }
